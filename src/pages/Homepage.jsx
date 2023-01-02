@@ -22,7 +22,7 @@ const Hero = () => {
       <div className='h-full w-full bg-gray-100 absolute opacity-[.85] z-0 '></div>
       <div className='w-full h-32 flex justify-end items-center gap-12  lg:px-32 z-30 isolate text-neutral-600 tracking-wide '>
         <a
-          href='#'
+          href='/contact'
           className='relative h-10 font-bold text-xl  pr-14  flex items-center   text-magenta ease-in-out duration-150'>
           Coffee and catch up?
           <span className='absolute -right-4 -top-3'>

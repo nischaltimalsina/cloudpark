@@ -1,6 +1,12 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import CloudImg from "../assets/cloud.svg";
+import IoTImg from "../assets/iot.svg";
+import EcomImg from "../assets/ecom.svg";
+import MobileImg from "../assets/mobile.svg";
+import TrainingImg from "../assets/training.svg";
+import WebsiteImg from "../assets/website.svg";
 
 const Services = () => {
   return (
@@ -27,8 +33,8 @@ const Services = () => {
           </p>
         </div>
 
-        <div className='grid grid-cols-8'>
-          <div className='col-span-5 '>
+        <div className=''>
+          <div className='py-12'>
             <ul className='space-y-16 list-decimal list-inside font-light'>
               <li>
                 <NavLink
@@ -109,8 +115,46 @@ const Services = () => {
               </li>
             </ul>
           </div>
-          <div className='col-span-3 text-2xl leading-10 tracking-wider font-light'>
-            <Outlet />
+          <div className='grid grid-cols-4 py-24 '>
+            <div className='col-span-2'></div>
+            <div className='col-span-2 grid grid-cols-2'>
+              <div className='col-span-1 p-6 flex items-center border-b border-r border-neutral-400'>
+                <img src={CloudImg} alt='' />
+              </div>
+              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-24 px-6'>
+                <Cloud />
+              </div>
+              <div className='col-span-1  border-neutral-400 text-lg font-light py-24 px-6'>
+                <Training />
+              </div>
+              <div className='col-span-1 p-6 flex items-center border-r border-neutral-400'>
+                <img src={TrainingImg} alt='' />
+              </div>
+              <div className='col-span-1 px-6 flex items-center border-t border-b border-l border-neutral-400'>
+                <img src={IoTImg} alt='' />
+              </div>
+              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-24 px-6'>
+                <IoT />
+              </div>
+              <div className='col-span-1 border-b  border-neutral-400 text-lg font-light py-24 px-6'>
+                <Ecom />
+              </div>
+              <div className='col-span-1 p-6 border-b border-r border-l flex items-center border-neutral-400'>
+                <img src={EcomImg} alt='' />
+              </div>
+              <div className='col-span-1 p-6 border-b border-r flex items-center border-neutral-400'>
+                <img src={WebsiteImg} alt='' />
+              </div>
+              <div className='col-span-1 border-b border-neutral-400 text-lg font-light py-24 px-6'>
+                <Website />
+              </div>
+              <div className='col-span-1 border-b border-neutral-400 text-lg font-light py-24 px-6'>
+                <Mobile />
+              </div>
+              <div className='col-span-1 p-6 border-b border-r flex items-center border-neutral-400'>
+                <img src={MobileImg} alt='' />
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -2,10 +2,16 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div id="footer" className='h-[50%] w-full bg-neutral-700  text-white '>
+    <div id='footer' className='h-[50%] w-full bg-neutral-700  text-white '>
       <div className='max-w-7xl grid grid-cols-3 mx-auto py-24'>
         <div className='col-span-1 px-12'>
           <h3>Cloudpark</h3>
+          <p className="font-light py-12">
+            At Coudpark, we are constantly striving to stay up-to-date with the
+            latest technology trends and to offer the most advanced solutions to
+            our clients. We are committed to delivering reliable and secure
+            solutions that can help your business thrive.
+          </p>
         </div>
         <div className='col-span-1 px-12'>
           <h3 className='uppercase'>Useful Links</h3>
