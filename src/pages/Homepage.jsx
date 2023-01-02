@@ -60,7 +60,7 @@ const Hero = () => {
             </svg>
           </div>
           <div className='text-[10rem] myfont text-neutral-700 text-center mx-auto w-full'>
-            CLOUD PARK
+           <span className="text-magenta"> CLOUD</span> PARK
           </div>
           <p className='myont text-8xl font-extrabold w-full text-start z-10'>
             <Typewriter />
@@ -68,7 +68,10 @@ const Hero = () => {
         </div>
         <Navbar />
       </div>
-      <a id='top' href='#hero' className='absolute right-20 bottom-20'>
+      <a
+        id='top'
+        href='#hero'
+        className='absolute right-20 top-0 pb-20 h-full flex items-end'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -93,7 +96,7 @@ const Featured = () => {
       <div className='h-screen relative'>
         <div className='ease-in-out duration-300 snap-y scroll-smooth snap-mandatory  max-w-7xl mx-auto h-screen flex flex-col justify-center items-center lg:px-32'>
           <div className='w-full'>
-            <h2 className='text-4xl myfont'>Who We Are</h2>
+            <h2 className='text-4xl font-bold uppercase '>Who We Are</h2>
           </div>
           <div className='py-20 text-start w-full'>
             <div className=' text-xl text-wrap font-light tracking-wider leading-8'>
@@ -143,7 +146,7 @@ const Services = () => {
         id='featured'
         className='ease-in-out duration-300 snap-y scroll-smooth snap-mandatory h-full max-w-7xl mx-auto  flex flex-col justify-center items-center lg:px-32'>
         <div className='w-full'>
-          <h2 className='text-4xl text-end myfont'>What We Do</h2>
+          <h2 className='text-4xl text-end font-bold uppercase '>What We Do</h2>
         </div>
         <div className='py-20 text-end w-full'>
           <div className=' text-xl text-wrap font-light tracking-wider leading-8'>
@@ -189,37 +192,112 @@ const Services = () => {
 
 const Testimonial = () => {
   return (
-    <div className='relative  h-screen '>
+    <div className='relative pt-32 w-full '>
       <div
         id='featured'
         className='ease-in-out duration-300 snap-y scroll-smooth snap-mandatory h-full max-w-7xl mx-auto  flex flex-col justify-center items-center lg:px-32'>
         <div className='w-full'>
-          <h2 className='text-4xl text-center myfont'>Testimonials</h2>
+          <h2 className='text-4xl text-center  font-bold uppercase myfnt'>Testimonials</h2>
         </div>
-        <div className='py-20 text-end w-full'>
-          <div className=' text-xl text-wrap font-light tracking-wider leading-8'>
-            At Cloudpark, we offer a wide range of products and services to help
-            businesses succeed. Our offerings include products, as well as
-            services such as cloud solutions, training and consulting,
-            enterprise solutions, IoT solutions, website and portal development,
-            e-commerce solutions, and custom web and mobile app development. Our
-            team of experts is dedicated to staying up-to-date with the latest
-            technology trends and offering the most advanced solutions to our
-            clients. We believe in building long-term partnerships with our
-            clients and delivering exceptional value and return on investment
-            for all of our services. Our goal is to help our clients succeed by
-            providing the tools and support they need to grow and thrive.
-            <a className='text-magenta' href='/services'>
-              {" "}
-              Read more...
-            </a>
+        <div className='py-20 text-end w-full '>
+          <div className='grid grid-cols-2 gap-y-12'>
+            <div className='col-span-1 flex flex-col  items-center gap-5 px-6'>
+              <div className='h-24 w-24 aspect-square rounded-full bg-gray-200 overflow-hidden'>
+                <img
+                  src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                  className=''
+                  alt=''
+                />
+              </div>
+              <div className='w-full bg-white border rounded-lg text-start p-4 space-y-3 font-light'>
+                <p>
+                  I have been working with Cloudpark for the past year and I am
+                  extremely impressed with the quality of their work. Their team
+                  is knowledgeable, responsive, and always willing to go the
+                  extra mile to ensure my satisfaction. They have helped me
+                  streamline my operations and increase efficiency with their
+                  cloud solutions, and the results have been impressive. I
+                  highly recommend Cloudpark to any business looking for
+                  top-notch IT solutions.
+                </p>
+                <p className='text-end'> - John Doe, CEO of XYZ Company</p>
+              </div>
+            </div>
+            <div className='col-span-1 flex flex-col  items-center gap-5 px-6'>
+              <div className='h-24 w-24 aspect-square rounded-full bg-gray-200 overflow-hidden'>
+                <img
+                  src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                  alt=''
+                />
+              </div>
+              <div className='w-full bg-white border rounded-lg text-start p-4 space-y-3 font-light'>
+                <p>
+                  I have been extremely impressed with the level of service and
+                  expertise provided by Cloudpark. They have helped my business
+                  with website development, e-commerce solutions, and custom app
+                  development, and the results have been outstanding. Their team
+                  is professional, responsive, and always willing to go above
+                  and beyond to meet my needs. I highly recommend Cloudpark to
+                  any business looking for top-quality IT solutions.
+                </p>
+                <p className='text-end'> - Jane Smith, Owner of ABC Business</p>
+              </div>
+            </div>
+            <div className='col-span-1 flex flex-col  items-center gap-5 px-6'>
+              <div className='h-24 w-24 aspect-square rounded-full bg-gray-200 overflow-hidden'>
+                <img
+                  src='https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+                  alt=''
+                />
+              </div>
+              <div className='w-full bg-white border rounded-lg text-start p-4 space-y-3 font-light'>
+                <p>
+                  I have been working with Cloudpark for the past few
+                  months and have been extremely satisfied with their services.
+                  Their team is knowledgeable, responsive, and always willing to
+                  help with any questions or issues I have. They have helped my
+                  business with cloud solutions, training and consulting, and
+                  enterprise solutions, and the results have been impressive. I
+                  highly recommend Cloudpark to any business looking for
+                  reliable and expert IT solutions.
+                </p>
+                <p className='text-end'>
+                  {" "}
+                  - Bob Johnson, CTO of DEF Corporation
+                </p>
+              </div>
+            </div>
+            <div className='col-span-1 flex flex-col  items-center gap-5 px-6'>
+              <div className='h-24 w-24 aspect-square rounded-full bg-gray-200 overflow-hidden'>
+                <img
+                  src='https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1600'
+                  alt=''
+                />
+              </div>
+              <div className='w-full bg-white border rounded-lg text-start p-4 space-y-3 font-light'>
+                <p>
+                  I have been extremely impressed with the level of service and
+                  expertise provided by Cloudpark. They have helped my
+                  business with website development, e-commerce solutions, and
+                  custom app development, and the results have been outstanding.
+                  Their team is professional, responsive, and always willing to
+                  go above and beyond to meet my needs. I highly recommend
+                  Cloudpark to any business looking for top-quality IT
+                  solutions that deliver results.
+                </p>
+                <p className='text-end'>
+                  {" "}
+                  - Sarah Jones, Owner of GHI Company
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <a
         id='testimonial'
-        href='#testimonial'
-        className='fixed right-20 bottom-0 pb-20 flex items-end'>
+        href='#top'
+        className='absolute right-20 top-0 pb-20 h-full flex items-end'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
@@ -230,7 +308,7 @@ const Testimonial = () => {
           <path
             strokeLinecap='round'
             strokeLinejoin='round'
-            d='M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3'
+            d='M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18'
           />
         </svg>
       </a>

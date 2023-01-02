@@ -10,7 +10,7 @@ const About = () => {
       <Navbar />
       <div className='w-full py-12 px-6 lg:px-32 mx-auto z-10 isolate'>
         <div className='w-full'>
-          <h2 className='text-4xl text-center my-12 myfont'>Who We Are</h2>
+          <h2 className='text-4xl text-center my-12 font-bold uppercase '>Who We Are</h2>
         </div>
         <div className='h-80 max-w-7xl object-center mx-auto mt-24 hidden'>
           <img
