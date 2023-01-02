@@ -7,6 +7,7 @@ import EcomImg from "../assets/ecom.svg";
 import MobileImg from "../assets/mobile.svg";
 import TrainingImg from "../assets/training.svg";
 import WebsiteImg from "../assets/website.svg";
+import EnterpriseImg from "../assets/enterprise.svg";
 
 const Services = () => {
   return (
@@ -121,10 +122,10 @@ const Services = () => {
               <div className='col-span-1 p-6 flex items-center border-b border-r border-neutral-400'>
                 <img src={CloudImg} alt='' />
               </div>
-              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-24 px-6'>
+              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-12 px-6'>
                 <Cloud />
               </div>
-              <div className='col-span-1  border-neutral-400 text-lg font-light py-24 px-6'>
+              <div className='col-span-1  border-neutral-400 text-lg font-light py-12 px-6'>
                 <Training />
               </div>
               <div className='col-span-1 p-6 flex items-center border-r border-neutral-400'>
@@ -133,26 +134,32 @@ const Services = () => {
               <div className='col-span-1 px-6 flex items-center border-t border-b border-l border-neutral-400'>
                 <img src={IoTImg} alt='' />
               </div>
-              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-24 px-6'>
+              <div className='col-span-1 border-b border-t border-neutral-400 text-lg font-light py-12 px-6'>
                 <IoT />
               </div>
-              <div className='col-span-1 border-b  border-neutral-400 text-lg font-light py-24 px-6'>
-                <Ecom />
+              <div className='col-span-1 border-b  border-neutral-400 text-lg font-light py-12 px-6'>
+                <Enterprise />
               </div>
               <div className='col-span-1 p-6 border-b border-r border-l flex items-center border-neutral-400'>
-                <img src={EcomImg} alt='' />
+                <img src={EnterpriseImg} alt='' />
               </div>
-              <div className='col-span-1 p-6 border-b border-r flex items-center border-neutral-400'>
+              <div className='col-span-1 p-6 border-b  flex items-center border-neutral-400'>
                 <img src={WebsiteImg} alt='' />
               </div>
-              <div className='col-span-1 border-b border-neutral-400 text-lg font-light py-24 px-6'>
+              <div className='col-span-1 border-b border-l border-neutral-400 text-lg font-light py-12 px-6'>
                 <Website />
               </div>
-              <div className='col-span-1 border-b border-neutral-400 text-lg font-light py-24 px-6'>
+              <div className='col-span-1 border-b border-neutral-400 text-lg font-light py-12 px-6'>
                 <Mobile />
               </div>
               <div className='col-span-1 p-6 border-b border-r flex items-center border-neutral-400'>
                 <img src={MobileImg} alt='' />
+              </div>
+              <div className='col-span-1 p-6 border-b border-r border-l flex items-center border-neutral-400'>
+                <img src={MobileImg} alt='' />
+              </div>
+              <div className='col-span-1 border-b  border-neutral-400 text-lg font-light py-12 px-6'>
+                <Mobile />
               </div>
             </div>
           </div>
@@ -167,6 +174,7 @@ export default Services;
 function Cloud() {
   return (
     <>
+    <h3 className="py-4 text-3xl text-magenta">Cloud</h3>
       <p className=''>
         Our cloud services are designed to help businesses streamline their
         operations and increase efficiency. We offer a range of hosting,
@@ -180,7 +188,7 @@ function Cloud() {
 }
 function Training() {
   return (
-    <>
+    <><h3 className="py-4 text-3xl text-magenta">Training & Consuting</h3>
       <p className=''>
         We offer training and consulting services to help businesses stay
         up-to-date with the latest technology trends and best practices. Our
@@ -193,7 +201,7 @@ function Training() {
 }
 function Enterprise() {
   return (
-    <>
+    <><h3 className="py-4 text-3xl text-magenta">Enterprise Solutions</h3>
       <p className=''>
         We understand that large businesses often have unique IT needs that
         require custom solutions. That's why we offer enterprise solutions that
